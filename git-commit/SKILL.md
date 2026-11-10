@@ -1,6 +1,6 @@
 ---
 name: git-commit
-description: 用户要求整理或提交当前 Git 变更时，分析 staged、unstaged 和 untracked 内容，必要时拆分，并直接完成提交。
+description: 用户要求整理或提交当前 Git 变更时，分析 staged、unstaged 和 untracked 内容，必要时拆分，并使用中文提交信息完成提交。
 ---
 
 # Git 提交助手
@@ -15,4 +15,6 @@ description: 用户要求整理或提交当前 Git 变更时，分析 staged、u
 4. 按分组暂存对应内容；涉及同一文件的不同分组时按 hunk 暂存。用 `git diff --cached` 和 `git diff --cached --check` 核对实际内容后直接执行 `git commit`，无需逐条确认。
 5. 完成后报告各提交的短 hash、标题、文件和 `git status --short --branch`，说明剩余变更。
 
-提交信息格式：`<type>(<scope>): <subject>`。使用恰当的 `feat`、`fix`、`docs`、`refactor`、`test`、`chore` 等类型；scope 可省略。标题简短、用祈使句、无句号；正文只补充原因、影响或迁移注意事项。不加 AI 署名。
+默认用简体中文撰写提交标题和正文，用户明确指定其他语言时按其要求执行。沿用 Conventional Commits 的 `<type>(<scope>): <subject>` 格式，使用 `feat`、`fix`、`docs`、`refactor`、`test`、`chore` 等类型。`scope` 可省略，模块名和代码标识符可保留原文。
+
+标题以「新增」「修复」「更新」等动词开头，简短且末尾不加句号，例如 `fix(auth): 修复登录状态过期后无法重新登录的问题`。正文按需补充原因、影响或迁移注意事项。不加 AI 署名。
