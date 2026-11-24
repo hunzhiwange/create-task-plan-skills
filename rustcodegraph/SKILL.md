@@ -8,7 +8,7 @@ description: 通过 `rustcodegraph` 命令行界面使用 RustCodeGraph 理解�
 将 RustCodeGraph 作为预计算代码地图使用：符号搜索、源码片段、
 调用边、影响半径和受影响测试都来自本地 `.rustcodegraph/` 索引。
 通过独立安装的外部 `rustcodegraph` CLI 使用索引。
-优先使用 `~/.rustcodegraph/bin/rustcodegraph`，或 PATH 中的 `rustcodegraph`。
+优先使用 PATH 中的 `rustcodegraph`。
 CLI 未安装或不可执行时，回退普通代码搜索与文件读取，不自动安装。
 
 ## 首次检查
