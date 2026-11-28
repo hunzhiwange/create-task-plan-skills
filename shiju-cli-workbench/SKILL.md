@@ -1,6 +1,6 @@
 ---
 name: shiju-cli-workbench
-description: 在识矩「我的工作台」使用原生 Codex 终端，或通过 shiju 协调同项目的 ACP 会话。适用于会话启动、任务投递、结果回收和交接。
+description: 通过 shiju 协调同项目的 ACP 会话。适用于会话启动、任务投递、结果回收和交接。
 ---
 
 # 我的工作台协作
